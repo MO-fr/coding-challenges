@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding challenge</title>
+</head>
+<body>
+
+
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Learning Hub</title>
+  <link rel="stylesheet" href="cc.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Cybersecurity Learning Hub</h1>
+      <ul>
+        <li><a href="#hashing-exercise">Hashing Exercise</a></li>
+        <li><a href="#password-checker">Password Strength Checker</a></li>
+        <li><a href="#quiz-section">Security Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Password Hashing Exercise -->
+    <section id="hashing-exercise" class="exercise">
+      <h2>Password Hashing Exercise</h2>
+      <p>Learn the importance of hashing passwords for secure storage.</p>
+      <input type="password" id="password" placeholder="Enter a password">
+      <button onclick="generateHash()">Generate Hash</button>
+      <div id="hash-result"></div>
+    </section>
+
+    <!-- Password Strength Checker -->
+    <section id="password-checker" class="exercise">
+      <h2>Password Strength Checker</h2>
+      <p>Check your password strength as you type.</p>
+      <input type="password" id="strength-password" placeholder="Enter password to check">
+      <div id="strength-result"></div>
+    </section>
+
+    <!-- Cybersecurity Quiz -->
+    <section id="quiz-section" class="exercise">
+      <h2>Cybersecurity Quiz</h2>
+      <p>Test your knowledge with a quick quiz on security basics!</p>
+      <button onclick="startQuiz()">Start Quiz</button>
+      <div id="progress-bar">
+        <div id="progress-bar-fill"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Quiz Results -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>Quiz Results</h2>
+      <p id="quiz-feedback"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Cybersecurity Learning Hub</p>
+  </footer>
+
+  <script src="data.js"></script>
+</body>
+</html>
